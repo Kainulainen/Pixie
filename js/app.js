@@ -7,7 +7,7 @@ requirejs.config({
     }
 });
 
-require(['main/pics'], function() {
+require(['main/pixie'], function() {
     var isTestEnv = document.location.href.match('runTests') != null
     if (isTestEnv) require(['test/runner'])
 })
