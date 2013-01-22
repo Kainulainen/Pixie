@@ -17,7 +17,7 @@ define(function (require, exports, module) {
     require('test/setup');
 
     var specs = [
-        'test/spec/runner.spec',
+        'test/spec/pixie.spec',
         'cs!test/spec/cs.spec'
     ]
     require(specs, function (module) {
