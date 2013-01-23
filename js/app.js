@@ -1,6 +1,6 @@
 requirejs.config({
     paths: {
-        'jquery': ['http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min', 'lib/jquery-1.8.3.min'],
+        'jquery': ['http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min', 'lib/jquery-1.9.0.min'],
         '_': 'lib/lodash.min',
         'Bacon': 'lib/Bacon',
         'tpl': 'lib/tpl-custom'
