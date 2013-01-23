@@ -4,6 +4,7 @@ require.config({
         'coffee-script': 'test/lib/coffee-script',
         'mocha':'test/lib/mocha',
         'chai':'test/lib/chai',
+        'chai-jquery':'test/lib/chai-jquery-1.1.1',
         'sinon-chai':'test/lib/sinon-chai'
     } ,
     shim: {
