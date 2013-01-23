@@ -1,4 +1,4 @@
-requirejs.config({
+require.config({
     paths: {
         'jquery': ['http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min', 'lib/jquery-1.9.0.min'],
         '_': 'lib/lodash.min',
