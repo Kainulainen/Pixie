@@ -12,7 +12,9 @@ define(function (require) {
     pictures.plug(Bacon.once(dummyChunk))
 
     var preLoadedImages = pictures.map(toJSON).flatMap(splitByUrl).map(preLoad)
-    preLoadedImages.onValue(function (image) {$('#picture').append(image)})
+    preLoadedImages.onValue(function (image) {
+        setTimeout(function() {$(image).load(function() {$(this).appendTo("#picture")})},1)
+    })
 
     function preLoad(imageUrl) {
         var image = new Image()
