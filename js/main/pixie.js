@@ -19,12 +19,8 @@ define(function (require) {
         return image
     }
 
-    function splitByUrl(array) {
-        var stream = Bacon.never()
-        _.each(array, function (value) {
-            stream = stream.concat(Bacon.once(value))
-        })
-        return stream
+    function splitByUrl(urls) {
+        return _.reduce(urls, function (stream, value) {return stream.concat(Bacon.once(value))}, Bacon.never())
     }
 
     function toJSON(message) {
